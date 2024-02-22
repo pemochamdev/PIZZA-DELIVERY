@@ -42,8 +42,13 @@ INSTALLED_APPS = [
     'orders.apps.OrdersConfig',
 
     #third_party
-    'rest_framework'
+    'rest_framework',
+
+    # Other apps…
+    "phonenumber_field",
 ]
+
+AUTH_USER_MODEL = 'authentication.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
